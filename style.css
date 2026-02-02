@@ -217,12 +217,88 @@ em {
 
 /* About Section */
 .about-content {
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .about-content p {
     font-size: 1.05rem;
     margin-bottom: 1.25rem;
+}
+
+/* Vision Block - Highlighted Section */
+.vision-block {
+    background: linear-gradient(135deg, var(--color-background-alt) 0%, #e8f5f3 100%);
+    border-left: 4px solid var(--color-primary);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.vision-statement {
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.vision-block p {
+    margin-bottom: 0.75rem;
+}
+
+.vision-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Research Pillars */
+.research-pillars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin: 2rem 0;
+}
+
+.pillar {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.pillar:hover {
+    box-shadow: 0 4px 12px rgba(0, 104, 91, 0.1);
+    transform: translateY(-2px);
+}
+
+.pillar-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-background);
+    background: var(--color-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.pillar p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .research-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-block {
+        padding: 1.25rem 1.5rem;
+    }
 }
 
 /* Research Grid */
